@@ -5,7 +5,7 @@ package encapsuation;
 import java.util.Scanner;
 
 class Employee{
-	//instance variable :the varibales declared in the class
+	//instance variable :the variables declared in the class
 	 int age; //int 0
 	 String name;//String null
 	 float salary; //0.0
@@ -21,7 +21,7 @@ class Employee{
 	}
 	
 	 void employeeDisplay() { //member function
-		int totalsalary; //local variable: the variable declared inside a method
+		//int total salary; //local variable: the variable declared inside a method
 		                  //local varibale does not have default values
 		System.out.println("Name="+name);
 		System.out.println("age="+age);
