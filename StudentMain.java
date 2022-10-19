@@ -1,39 +1,30 @@
-package encapsuation;
+package com.edubri;
 
-import java.util.Scanner;
-
-class Student{
-	String studentname;
-	float studentfees;
-	String studentemail;
-	int tam,eng,maths,sci;
-	float total, avg;
-	
-	void studentInput() {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter studentname");
-		studentname=sc.nextLine();
-		System.out.println("Enter studentfees");
-		studentfees=sc.nextFloat();
-		System.out.println("Enter studentemail");
-		studentemail=sc.next();
-	}
-	
-	 void studentDisplay() { 
-		System.out.println("studentName="+  studentname);
-		System.out.println("studentfees="+studentfees);
-		System.out.println("studentemail="+studentemail);
-	}
-	}
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public class StudentMain {
-	public static void main (String ars[]) {
-		System.out.println("Mainmethod");
-		Student studentobject=new Student ();
-		studentobject.studentInput();
-		studentobject.studentDisplay();
-		
-		
+
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		// TODO Auto-generated method stub
+int sid;
+String sname;
+//accept data from user
+//BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+//or
+InputStreamReader is=new InputStreamReader(System.in);
+BufferedReader br=new BufferedReader(is);
+
+System.out.println("Enter student id");
+sid= Integer.parseInt(br.readLine());
+System.out.println("Enter name of student");
+sname=br.readLine();
+
+System.out.println("Id="+sid);
+System.out.println("Name="+sname);
+
 	}
 
 }
